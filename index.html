@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferminus Contact Page</title>
     <style>
+        @font-face {
+            font-family: somarBlack;
+            src: url(UniSIRWAN\ Somar\ Black.ttf);
+        }
+        @font-face {
+            font-family: somarRegular;
+            src: url(UniSIRWAN\ Somar\ Regular.ttf);
+        }
+        @font-face {
+            font-family: league;
+            src: url(LeagueSpartan-Regular.ttf);
+        }
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2; /* Light background */
+            font-family: league;
+            background-color: #f2f2f2; 
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -25,19 +37,21 @@
             border-radius: 50%;
         }
         .logo-text {
+            font-family: somarBlack;
             font-size: 1.5em;
-            font-weight: bold;
-            color: #c00000; /* Original red color */
+            
+            color: #c00000; 
             margin-top: 10px;
         }
         .subtitle {
-            color: #c00000; /* Original red color */
+            font-family: somarRegular;
+            color: #c00000; 
             font-size: 1em;
         }
         .contact-item {
             display: flex;
             align-items: center;
-            background-color: #ffffff; /* White background */
+            background-color: #ffffff; 
             margin: 10px 0;
             padding: 10px 20px;
             width: 90%;
@@ -45,7 +59,7 @@
             border-radius: 25px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             font-size: 1em;
-            color: #c00000; /* Original red color */
+            color: #c00000; 
             transition: transform 0.3s, box-shadow 0.3s;
         }
         .contact-item:hover {
